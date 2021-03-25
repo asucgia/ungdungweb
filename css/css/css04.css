@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+ color:#000000;
+ background-color:#ffffff;
+ font-size:12px;
+ font-family:arial, verdana, sans-serif;
+}
+h1{border: 3px solid #000000;
+	background-color: darkgrey;
+}
+p{padding: 10px;}
+p[id] {border:2px solid #000000;}
+
+p[id="textba"] {
+ border: dashed blue 2px;
+}
+
+img{
+	border: ridge black 3px;
+
+}

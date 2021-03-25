@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-style: normal;
+	padding: 12px;
+}
+div{
+	border: 2px solid #333333;
+  	width: 150px;
+ 	height: 200px;
+	background: yellow;
+}
+.hidden{	
+	line-height:20px;
+	overflow: hidden;
+}
+.scroll{
+	overflow: scroll;
+	float: right;
+}

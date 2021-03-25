@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  font: normal medium/1.4 sans-serif;
+}
+table {
+  	border-collapse:collapse;
+  	width: 100%;
+}
+thead tr th{
+	text-align: center;
+	color:white; 
+}
+thead {	
+	background-color: darkgrey;
+}
+th, td {
+  	padding: 2px;
+  	text-align: left;
+  	border: 2px solid #ccc;
+}
+tbody tr:nth-child(odd) {
+   	background-color:#D7D7D7;
+}
+tbody tr:nth-child(even){
+	background-color:lavender;
+}
+
+
