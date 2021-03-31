@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+h1{
+	color:green;
+}
+li {
+	margin: 0 2vw;
+	font-size: 6vh;
+	list-style-type: none
+}
+
+a{
+	text-decoration: none
+}
+
+nav{
+	width: 100vw;
+	background-color: #6DEFFF;
+}
+
+body{
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.shadow{
+  text-shadow: 3px 1px 0px #F2A063;
+}
+nav ul li a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  font-weight: 300;
+  margin: 0 8px;
+}
+nav.shift ul li a:hover {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+.login{
+	padding-left:10px;
+	float:right;
+}
+nav ul li a:hover {
+  background-color: #555;
+}
+#button{
+	width: 80px;
+    height: 40px;
+    background-color: lightblue;
+    color: red;
+}
+#button:hover{
+    background-color: white;
+    color: black;
+}

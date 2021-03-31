@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  text-align: center;  
+}
+
+#container {
+  margin: 0 auto;      
+  text-align: left;    
+  width: 960px;        
+}
+
+#header {
+  width: 960px;      
+}
+div.banner {
+	background:url("../../images/sparklin.jpg");
+	margin-top:5px;
+	overflow:hidden;
+}
+
+div.banner > img {
+	float:left;
+}
+div.banner > h1 {
+	font-size:40px;
+	color:#D9F50C;
+	line-height:120px;
+	margin:0;
+	top:0;
+	float:center;
+	text-align: center;
+}
+
+#navigation li {
+	
+  	display: inline;
+}
+#navigation li a{
+	color: #fff;
+	padding: 5px;
+	text-decoration: none;
+	list-style-type: none;
+}
+#navigation ul{
+	margin: 0px;
+	padding: 5px;
+	background: blue;
+	text-align: center;
+}
+
+#content{
+	position: absolute;
+    float: left;         
+  	width: 560px;
+}
+#content div{
+	overflow: scroll;
+}
+
+
+#left {
+ 	float: left;
+ 	width: 200px;
+	background-color: aqua;
+}
+
+#right{
+	background-color: aqua;
+	border-radius: 20px;
+	text-align: center;
+  	float: right;       
+  	width: 200px;
+	margin: 0px;
+}
+#right div.ad1{
+	border-radius: 25px;
+	max-width:100%;
+	min-height:100px;
+	
+}
+#right div.ad2{border-radius: 25px;
+	max-width:100%;
+	min-height:100px;
+
+}
+#footer {
+	color: antiquewhite;
+	margin: 0px;
+	background: blue;
+	text-align: center;
+  	clear: both;        
+  	width: 960px;       
+}
