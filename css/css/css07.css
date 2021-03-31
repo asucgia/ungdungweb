@@ -32,3 +32,6 @@ li a{
 li a:hover{
 	background-color: darkgoldenrod;
 }
+li a:active{
+	background-color: red;
+}
