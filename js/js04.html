@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<body>
+    <center>
+        <h1>Các phép toán số học</h1>
+        <table>
+            <tr>
+                <td>Số thứ 1:</td>
+                <td><input type="number" id="num1"/></td>
+            </tr>
+            <tr>
+                <td>Số thứ 2:</td>
+                <td><input type="number" id="num2"/></td>
+            </tr>
+            <tr id="pheptinh">
+                <td>Chọn phép toán:</td>
+                <td>
+                    <button type="submit" id="add" onclick="cong()"/>Cộng
+                    <button type="submit" id="sub" onclick="tru()"/>Trừ
+                    <button type="submit" id="multiply" onclick="nhan()"/>Nhân
+                    <button type="submit" id="divide" onclick="chia()"/>Chia
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><textarea id="result"></textarea></td>
+            </tr>
+        </table>
+        
+    </center>
+    
+</body>
+<script>
+    function cong(){
+        var s1 = document.getElementById("num1").value;
+        var s2 = document.getElementById("num2").value;
+        tong = parseFloat(s1) + parseFloat(s2);
+        document.getElementById("result").innerHTML = tong;
+    }
+    function tru(){
+        var s1 = document.getElementById("num1").value;
+        var s2 = document.getElementById("num2").value;
+        hieu = parseFloat(s1) - parseFloat(s2);
+        document.getElementById("result").innerHTML = hieu;
+    }
+    function nhan(){
+        var s1 = document.getElementById("num1").value;
+        var s2 = document.getElementById("num2").value;
+        tich = parseFloat(s1) * parseFloat(s2);
+        document.getElementById("result").innerHTML = tich;
+    }
+    function chia(){
+        var s1 = document.getElementById("num1").value;
+        var s2 = document.getElementById("num2").value;
+        thuong = parseFloat(s1) / parseFloat(s2);
+        document.getElementById("result").innerHTML = thuong;
+    }
+    
+
+        
+
+  
+</script>
+</html>

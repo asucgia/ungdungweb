@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+	
+<body>
+	<center>
+	<h1>Chương trình giải phương trình bậc 2</h1>
+	<h2>ax<sup>2</sup> + bx + c =0</h2>
+	<div>
+		<div>a= <input type="text" id="aId" /></div>
+		<div>b= <input type="text" id="bId" /></div>
+		<div>c= <input type="text" id="cId" /></div>
+		<div><input type="button" value="Giải" onClick="giaiBac2()" /></div>
+		<div id="kqId"></div>
+	</div>
+	</center>
+	
+
+</body>
+<script type="text/javascript">
+	function kt(e) {
+		if (e.value == "") {
+			var count = 0;
+			var timer = setInterval(function() {
+				if (e.style.border == "")
+					e.style.border = "2px solid red";
+				else
+					e.style.border = "";
+					
+				count++;
+				if (count == 6) {
+					clearInterval(timer);
+					count = 0;
+				}
+			}, 500);
+			return true;
+		}	
+		
+		return false;
+	}
+	function giaiBac2() {
+		var aHTML = document.getElementById("aId");
+		var bHTML = document.getElementById("bId");
+		var cHTML = document.getElementById("cId");
+		if (aHTML != undefined && bHTML != undefined && cHTML != undefined) {
+			// Kiem tra du lieu nhap
+			if (kt(aHTML) || kt(bHTML) || kt(cHTML))
+				return;
+			
+			// Giai phuong trinh
+			var a = parseFloat(aHTML.value);
+			var b = parseFloat(bHTML.value);
+			var c = parseFloat(cHTML.value);
+			
+			var kq = "";
+			if (a == 0) {
+				// bx + c = 0
+				if (b == 0)
+					if (c == 0)
+						kq = "Phuong trinh vo so nghiem";
+					else
+						kq = "Phuong trinh vo nghiem";
+				else
+					kq = "Pt có nghiệm x= " + (-c/b);
+			} else {
+				var delta = Math.pow(b, 2) - 4 * a * c;
+				if (delta < 0)
+					kq = "Pt vô nghiệm";
+				else if (delta == 0)
+					kq = "Pt nghiệm kép x1 = x2 = " + (-b/2*a);
+				else {
+					var x1 = (-b - Math.sqrt(delta))/2*a;
+					var x2 = (-b + Math.sqrt(delta))/2*a;
+					kq = "Phương trình có 2 nghiệm: x1 = " + x1.toFixed(2)  +" ; x2 = " + x2.toFixed(2);
+				}
+			}
+			
+			//alert(kq);
+			var d = document.getElementById("kqId");
+			d.innerText = kq;
+			//d.innerHTML = kq;	
+		}
+	}
+	</script>
+</html>

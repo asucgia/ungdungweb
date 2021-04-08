@@ -2,20 +2,17 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
-	<script src="js01.js"></script>
-	
 </head>
 <body>
 	<script language="JavaScript">
 		var date = new Date();
 		var NamSinh, NamHienTai, Ten;
-		NamHienTai = date.getFullYear(); // Lưu năm hiện tại vào biến
+		NamHienTai = date.getFullYear();
 		Ten = prompt("Bạn tên là gì ? ","")
 		NamSinh = prompt("Bạn sinh năm bao nhiêu ? : ","");
-		document.write("Chào bạn : <B> " + Ten + "</B>");
+		document.write("Chào bạn : " + Ten + "</B>");
 		document.write("<BR>"); // Xuống dòng
-		document.write("Tuổi của bạn là : <U> " + (NamHienTai-NamSinh) + "</U>");	
+		document.write("Tuổi của bạn là : " + (NamHienTai-NamSinh));	
 	</script>
-	
 </body>
 </html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>js10</title>
+</head>
+
+<body style="text-align: center;">
+      
+    <!-- <h1 style="color: green;">Xử lí chuỗi</h1>
+	
+    
+    Chuỗi ban đầu
+    <input type="text" id="string" /><br>        
+    <button type="button" name="button" onclick="ReverseString(2)">Đảo</button>
+    <button type="button" name="button" onclick="capitalizeFirstLetter()">Chuẩn hóa</button>
+  
+    <p id="print"></p> -->
+  
+    <script type="text/javascript">
+        // var str = document.getElementById("text").value;
+        // function ReverseString(str) {
+        //     return str.split('').reverse().join('')
+        // }  
+ 
+        function reverseString(str) {
+
+       
+            let newString = "";
+                for (let i = str.length - 1; i >= 0; i--){
+                    newString += str[i];
+            }
+                return newString;
+        }
+
+        function capital_letter(str) {
+            str = str.split(" ");
+
+            for (let i = 0, x = str.length; i < x; i++) {
+                str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+            }
+
+            return str.join(" ");
+        }
+       
+        const string = prompt('Enter a string: ');
+        //Thay doi func o day
+        // const result = capital_letter(string);
+        const result = reverseString(string);
+        
+      
+        document.write(result);     
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script language="javascript">
+		function bangcuuchuong(){
+			document.write("<center><h1>Bảng cửu chương</h1> 																<table border=1 width=100%>														</center>")
+			for(i=1;i<=9;i++){
+				document.write("<tr>")
+				for(n=2;n<=9;n++)   
+					document.write("<td>" +n + "x" + i +"="+ (n*i));
+					document.write("</td>");
+					document.write("</tr>")
+				}
+			document.write("</tr></table>")
+}
+	</script>
+</head>
+
+<body>
+	<button type="submit" value="In" onClick="bangcuuchuong()">Table</button>
+</body>
+</html>
