@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/					jquery/3.5.1/jquery.min.js">
+	</script>
+	<script>
+		$(document).ready(function(){
+  			$("#add").click(function(){
+    			$("ul").append(
+    				$("#language").val()		
+    			);
+  			});
+		});
+
+	</script>
+</head>
+<body>
+	<input type="text" id="language" placeholder="Thêm ngôn ngữ">
+	<ul>
+	  <li>Python</li>
+	  <li>PHP</li>	
+	</ul>
+	<button id="add">Thêm</button>
+</body>
+</html>
