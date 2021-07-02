@@ -1,94 +1,102 @@
-@charset "utf-8";
-/* CSS Document */
-body {
-  text-align: center;  
-}
-
-#container {
-  margin: 0 auto;      
-  text-align: left;    
-  width: 960px;        
-}
-
-#header {
-  width: 960px;      
-}
-div.banner {
-	background:url("../../images/sparklin.jpg");
-	margin-top:5px;
-	overflow:hidden;
-}
-
-div.banner > img {
-	float:left;
-}
-div.banner > h1 {
-	font-size:40px;
-	color:#D9F50C;
-	line-height:120px;
-	margin:0;
-	top:0;
-	float:center;
-	text-align: center;
-}
-
-#navigation li {
-	
-  	display: inline;
-}
-#navigation li a{
-	color: #fff;
-	padding: 5px;
-	text-decoration: none;
-	list-style-type: none;
-}
-#navigation ul{
+*{
 	margin: 0px;
-	padding: 5px;
-	background: blue;
+	padding: 0px;
+}
+.main{
+	display: flex;
+	flex-direction: column;
+	background-color: pink;
+}
+.banner{
+	height: 100px;
+	background-color: lightblue;
+}
+h1{
 	text-align: center;
+	padding-top: 30px;
+	color: rosybrown;
 }
-
-#content{
+.nav{
+	text-align: center;
+	height: 40px;
+	background-color: darksalmon;
+	font-size: 20px;
+	font-weight: 900;
+}
+#menu ul{
+	list-style-type: none;
+	background-color: darkgoldenrod;
+}
+#menu li{
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+	position: relative;
+	line-height: 40px;
+}
+#menu li #submenu{
+	display: none;
 	position: absolute;
-    float: left;         
-  	width: 560px;
 }
-#content div{
+#menu li:hover #submenu{
+	display: block;
+}
+#menu a{
+	text-decoration: none;
+	display: block;
+}
+#menu a:hover{
+	color: yellow;
+}
+.container{
+	display: flex;
+	flex-direction: row;
+	min-height: 400px;
+	background-color: orange;
+}
+.left{
+	width: 15%;
+	background-color: green;
+	padding: 20px;
+}
+.content{
+	width: 70%;
+	padding: 5px;
+}
+.content > div{
+	display: flex;
+	flex-direction: row;
+}
+.content div div{
+	padding: 2px;
+	border: 2px solid black;
+	width: 50%;
+	height: 250px;
+	background-color: grey;
+	margin: 2px;
+	text-align: justify;
+	overflow: hidden;
+}
+.content div:last-child div:last-child{
 	overflow: scroll;
 }
-
-
-#left {
- 	float: left;
- 	width: 200px;
-	background-color: aqua;
+.right div/**/
+{
+    margin: 5px;background-color: mediumpurple;
+    width: 90%;
+    height: 160px;
+    border-radius: 20px;
+    border: 2px solid darkgreen;
+    overflow: hidden;    
 }
 
-#right{
-	background-color: aqua;
-	border-radius: 20px;
-	text-align: center;
-  	float: right;       
-  	width: 200px;
-	margin: 0px;
-}
-#right div.ad1{
-	border-radius: 25px;
-	max-width:100%;
-	min-height:100px;
-	
-}
-#right div.ad2{border-radius: 25px;
-	max-width:100%;
-	min-height:100px;
-
-}
-#footer {
-	color: antiquewhite;
-	margin: 0px;
-	background: blue;
-	text-align: center;
-  	clear: both;        
-  	width: 960px;       
+.footer
+{   
+    height: 50px;
+    background-color: cornflowerblue;
+    padding-top: 20px;
+    text-align: center;    
+    color:whitesmoke;
+    font-size: x-large;
+    font-weight: 900;
 }
