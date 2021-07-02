@@ -1,0 +1,102 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.main{
+	display: flex;
+	flex-direction: column;
+	background-color: pink;
+}
+.banner{
+	height: 100px;
+	background-color: lightblue;
+}
+h1{
+	text-align: center;
+	padding-top: 30px;
+	color: rosybrown;
+}
+.nav{
+	text-align: center;
+	height: 40px;
+	background-color: darksalmon;
+	font-size: 20px;
+	font-weight: 900;
+}
+#menu ul{
+	list-style-type: none;
+	background-color: darkgoldenrod;
+}
+#menu li{
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+	position: relative;
+	line-height: 40px;
+}
+#menu li #submenu{
+	display: none;
+	position: absolute;
+}
+#menu li:hover #submenu{
+	display: block;
+}
+#menu a{
+	text-decoration: none;
+	display: block;
+}
+#menu a:hover{
+	color: yellow;
+}
+.container{
+	display: flex;
+	flex-direction: row;
+	min-height: 400px;
+	background-color: orange;
+}
+.left{
+	width: 15%;
+	background-color: green;
+	padding: 20px;
+}
+.content{
+	width: 70%;
+	padding: 5px;
+}
+.content > div{
+	display: flex;
+	flex-direction: row;
+}
+.content div div{
+	padding: 2px;
+	border: 2px solid black;
+	width: 50%;
+	height: 250px;
+	background-color: grey;
+	margin: 2px;
+	text-align: justify;
+	overflow: hidden;
+}
+.content div:last-child div:last-child{
+	overflow: scroll;
+}
+.right div/**/
+{
+    margin: 5px;background-color: mediumpurple;
+    width: 90%;
+    height: 160px;
+    border-radius: 20px;
+    border: 2px solid darkgreen;
+    overflow: hidden;    
+}
+
+.footer
+{   
+    height: 50px;
+    background-color: cornflowerblue;
+    padding-top: 20px;
+    text-align: center;    
+    color:whitesmoke;
+    font-size: x-large;
+    font-weight: 900;
+}
